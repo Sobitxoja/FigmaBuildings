@@ -1,0 +1,324 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --blue: #edf3f5;
+  --gray: #f7f7f7;
+  --red: #ff4f4f;
+  --stroke: #eaeaea;
+  --label: #b3b3b3;
+  --black20: #d6d6d6;
+  --black60: #858585;
+  --black100: #333333;
+  --beigie120: #b48c76;
+  --beigie40: #f3dfd4;
+  --beigie70: #eac7b4;
+  --beigie100: #e1af93;
+}
+
+.new-image {
+  display: none;
+}
+
+.wrapper {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+/* Logo */
+
+header {
+  height: 100px;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 24px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left; /* Ensure text aligns correctly */
+}
+
+.title {
+  font-family: "Belleza";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--black100);
+}
+
+.sub-title {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--black60);
+}
+
+/* Middle */
+.middle ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.middle ul li a {
+  text-decoration: none;
+  color: var(--black100);
+  padding: 10px;
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically center the content */
+  justify-content: space-between; /* Ensure equal spacing between text and icon */
+  font-size: 20px;
+}
+
+.middle .chose svg {
+  margin-left: 5px;
+}
+
+/* RIGHT */
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.right img {
+  width: 50px;
+  height: 50px;
+}
+
+.right select {
+  border: 1px solid lightgray;
+  border-radius: 50px;
+  padding: 15px;
+  outline: none;
+}
+
+/* BODY */
+
+.body {
+  padding-top: 50px;
+}
+
+.body h2 {
+  padding-bottom: 30px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+}
+
+.body .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.body .special {
+  font-family: "Jost";
+  font-size: large;
+  width: 91px;
+  height: 53px;
+  border: none;
+  background: #e1af93;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  color: #ffffff;
+}
+
+.body .common {
+  font-family: "Jost";
+  font-size: large;
+  width: 150px;
+  height: 53px;
+  border: 1px solid var(--black20);
+  background-color: transparent;
+}
+
+/* Buildings Images */
+
+.buildings {
+  padding-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px; /* Adjust the gap between images as needed */
+}
+
+.buildings img {
+  width: 100%;
+}
+
+.player {
+  position: relative;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 200px;
+  background-color: var(--gray);
+  padding-top: 50px;
+}
+
+footer .upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--stroke);
+  padding-bottom: 40px;
+}
+
+footer .social-media img {
+  width: 35px;
+  height: 35px;
+}
+
+/* BOTTOM */
+
+.bottom {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(4, 220px);
+  font-family: "Jost", sans-serif;
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--stroke);
+}
+
+.bottom .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bottom .col a {
+  text-decoration: none;
+  color: var(--black100);
+  font-size: 18px;
+}
+
+/* END */
+
+.end {
+  padding-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.end .rights span {
+  color: var(--label);
+}
+
+.end .result-logo img {
+  width: 130px;
+  height: 70px;
+}
+
+h1 {
+  /* Headline 1 */
+  font-size: 80px;
+  line-height: 70px;
+  color: #000000;
+}
+
+h2 {
+  /* Headline 2 */
+  line-height: 70px;
+  color: var(--black100);
+  font-size: 55px;
+}
+
+h3 {
+  /* Headline 3 */
+  width: 175px;
+  line-height: 51px;
+  color: #000000;
+  font-size: 35px;
+}
+
+/* Headline 4 */
+h4 {
+  font-family: "Jost", sans-serif;
+  color: #000000;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+@media (max-width: 1100px) {
+  .wrapper {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .bottom {
+    display: grid;
+    grid-template-columns: 150px 200px 150px 1fr;
+    font-family: "Jost", sans-serif;
+    white-space-collapse: collapse;
+  }
+
+  .buildings {
+    grid-template-columns: 1fr;
+  }
+
+  .middle,
+  .right select,
+  .right img[src="images/telephone.png"] {
+    display: none; /* Скрыть .middle и select */
+  }
+
+  /* Вместо изображения телефона добавляем новое изображение */
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  /* Стили для нового изображения (по желанию) */
+  .right .new-image {
+    width: 50px; /* Размер нового изображения */
+    height: 50px;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 640px) {
+  .bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Jost", sans-serif;
+  }
+}
